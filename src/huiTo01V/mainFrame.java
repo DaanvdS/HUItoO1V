@@ -23,7 +23,6 @@ import virtualMidi.VirtualMidiReceiver;
 import de.tobiaserichsen.tevm.TeVirtualMIDI;
 import handlers.OverallHandler;
 import handlers.COMReceiver;
-import java.util.Hashtable;
 import javax.swing.JLabel;
 import javax.swing.JSlider;
 import javax.swing.JToggleButton;
@@ -87,10 +86,10 @@ public class mainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc=" MIDI ">
     public void connectMIDI() throws MidiUnavailableException, InvalidMidiDataException, InterruptedException {
         Preferences prefs = Preferences.userNodeForPackage(mainFrame.class);
-        yamInPort.openConnection(prefs.get("YamIn", ""));
-        yamSend.openConnection(prefs.get("YamOuts", ""));
-        comRec.setCOMPort(prefs.get("COMS", ""));
-        new Thread(comRec).start();
+        //yamInPort.openConnection(prefs.get("YamIn", ""));
+        //yamSend.openConnection(prefs.get("YamOuts", ""));
+        //comRec.setCOMPort(prefs.get("COMS", ""));
+        //new Thread(comRec).start();
         
         OverallHandler oHandler = new OverallHandler(hui1Handler, hui2Handler, yamHandler, this);
         Thread t = new Thread(oHandler);

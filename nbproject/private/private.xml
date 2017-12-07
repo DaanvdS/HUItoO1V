@@ -3,15 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Daan%20van%20der%20Spek/Documents/NetBeansProjects/huiTo01V_v3/src/handlers/OverallHandler.java</file>
-            <file>file:/C:/Users/Daan%20van%20der%20Spek/Documents/NetBeansProjects/huiTo01V_v3/src/uiObjects/trackDisplay.java</file>
-            <file>file:/C:/Users/Daan%20van%20der%20Spek/Documents/NetBeansProjects/huiTo01V_v3/src/huiTo01V/mainFrame.java</file>
-            <file>file:/C:/Users/Daan%20van%20der%20Spek/Documents/NetBeansProjects/huiTo01V_v3/src/huiTo01V/configFrame.java</file>
-            <file>file:/C:/Users/Daan%20van%20der%20Spek/Documents/NetBeansProjects/huiTo01V_v3/src/handlers/HUIHandler.java</file>
-            <file>file:/C:/Users/Daan%20van%20der%20Spek/Documents/NetBeansProjects/huiTo01V_v3/src/handlers/YAMHandler.java</file>
-            <file>file:/C:/Users/Daan%20van%20der%20Spek/Documents/NetBeansProjects/huiTo01V_v3/src/realMidi/RealMidiReceiver.java</file>
-            <file>file:/C:/Users/Daan%20van%20der%20Spek/Documents/NetBeansProjects/huiTo01V_v3/src/handlers/COMReceiver.java</file>
-            <file>file:/C:/Users/Daan%20van%20der%20Spek/Documents/NetBeansProjects/huiTo01V_v3/src/virtualMidi/VirtualMidiReceiver.java</file>
+            <file>file:/D:/Projects/HUItoO1V/HUItoO1V/src/handlers/COMReceiver.java</file>
         </group>
     </open-files>
 </project-private>

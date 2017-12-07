@@ -38,11 +38,8 @@ public class HUIHandler {
 
 // </editor-fold>
     
-    
     int reEntCounter = 0;
     byte tempHigh = 0x00;
-    
-    
     
     mainFrame mainFrameInst;
     ZoneData zones;
@@ -70,12 +67,10 @@ public class HUIHandler {
             faderSecondHUIOffset=0x08;
         }
     }
-    
-    
+       
     public void setyamHandler(YAMHandler t){
         yamHandler=t;
     }
-    
     
     //SENDER
     // <editor-fold defaultstate="collapsed" desc=" Sender ">
@@ -297,13 +292,13 @@ public class HUIHandler {
                             if(curr_message[7]<4){
                                 for(int i=0; i<10; i++){
                                     int index = i+(curr_message[7]*10);
-                                    System.out.println(index);
+                                    //System.out.println(index);
                                     lineOne.setCharAt(index,incomMesg[i]);
                                 }
                             } else {
                                 for(int i=0; i<10; i++){
                                     int index = i+((curr_message[7]-4)*10);
-                                    System.out.println(index);
+                                    //System.out.println(index);
                                     lineTwo.setCharAt(index,incomMesg[i]);
                                 }
                             }
@@ -320,7 +315,7 @@ public class HUIHandler {
                             String str8 = mainFrameInst.getMeterBridge().getTrackDisplay(1).convertLetter(curr_message[15]);
                             String str9 = mainFrameInst.getMeterBridge().getTrackDisplay(1).convertLetter(curr_message[16]);
                             String str10 = mainFrameInst.getMeterBridge().getTrackDisplay(1).convertLetter(curr_message[17]);
-                            System.out.println(Byte.toUnsignedInt(curr_message[7]) + ": " + str1+str2+str3+str4+str5+str6+str7+str8+str9+str10);
+                            //System.out.println(Byte.toUnsignedInt(curr_message[7]) + ": " + str1+str2+str3+str4+str5+str6+str7+str8+str9+str10);
                             break;
 
 // </editor-fold>
@@ -377,15 +372,13 @@ public class HUIHandler {
                             if (zone <= 7) {
                                 boolean onOff = false;
                                 channel = Byte.toUnsignedInt(curr_message[2]);
-                                //if(channel==2 || channel==66){
-                                //System.out.println("zone: "+zone);
-                                //System.out.println("port: "+channel);
+                                
                                 if (channel > 7) {
                                     channel -= 0x40;
                                     onOff = true;
                                 }
+                                
                                 portReceived(zone, channel, onOff);
-                                //}
                             }
                         }
                     }

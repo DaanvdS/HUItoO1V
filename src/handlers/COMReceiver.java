@@ -97,13 +97,13 @@ public class COMReceiver implements Runnable {
                 }
             }
         } catch (IOException ex) {
-            Logger.getLogger(SerialReceiver.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(SerialReceiver.class.getName()).log(Level.SEVERE, null, ex);
         } catch (UnsupportedCommOperationException ex) {
-            Logger.getLogger(SerialReceiver.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(SerialReceiver.class.getName()).log(Level.SEVERE, null, ex);
         } catch (PortInUseException ex) {
-            Logger.getLogger(SerialReceiver.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(SerialReceiver.class.getName()).log(Level.SEVERE, null, ex);
         } catch (NoSuchPortException ex) {
-            Logger.getLogger(SerialReceiver.class.getName()).log(Level.SEVERE, null, ex);
+            //Logger.getLogger(SerialReceiver.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
